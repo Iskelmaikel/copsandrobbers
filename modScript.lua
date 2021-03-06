@@ -1,0 +1,2 @@
+load("copsandrobbers")
+registerCoreModule("copsandrobbers")
