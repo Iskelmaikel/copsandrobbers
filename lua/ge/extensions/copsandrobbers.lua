@@ -5,15 +5,9 @@ local resource
 
 local function onExtensionLoaded()
     resource = jsonReadFile("settings/resource.json")
-    log("I", resource.name,  "version " .. resource.version .. " loaded")
-end
-
-local function onExtensionUnloaded()
-    log("I", resource.name,  "version " .. resource.version .. " unloaded, goodbye!")
-    Lua:requestReload()
+    log("I", resource.name,  " | version " .. resource.version .. " loaded")
 end
 
 M.onExtensionLoaded = onExtensionLoaded
-M.onExtensionUnloaded = onExtensionUnloaded
 
 return M
